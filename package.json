@@ -4,7 +4,8 @@
   "description": "API for SPA Breaking News",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/wilkerbezerra/API-BreakingNews/issues"
   },
-  "homepage": "https://github.com/wilkerbezerra/API-BreakingNews#readme"
+  "homepage": "https://github.com/wilkerbezerra/API-BreakingNews#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
 }
