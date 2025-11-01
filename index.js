@@ -1,16 +1,6 @@
 const express = require("express");
+const userRoute = require("./src/routes/user.route");
 const app = express();
 
-//ROTA
-//Método HTTP
-//Name
-//Function (callback)
-// app.get("/", (req, res) => {
-//   res.send("Hello World");
-// });
-app.get("/soma", (req, res) => {
-  const soma = 100 + 1;
-  res.send({ soma: soma });
-});
-
+app.use("/soma", userRoute);
 app.listen(3000);
